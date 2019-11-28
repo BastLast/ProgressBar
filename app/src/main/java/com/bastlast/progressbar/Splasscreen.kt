@@ -1,4 +1,4 @@
-package com.example.progressbar
+package com.bastlast.progressbar
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_splasscreen.*
 
 class Splasscreen : AppCompatActivity() {
 
-    private val splashTime = 2000L // 5 seconds
+    private val splashTime = 1000L // 1 seconds
     private lateinit var myHandler: Handler
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +37,7 @@ class Splasscreen : AppCompatActivity() {
 
     private fun goToMainActivity() {
         val mainActivityIntent = Intent(applicationContext, MainActivity::class.java)
+        mainActivityIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(mainActivityIntent)
         finish()
     }

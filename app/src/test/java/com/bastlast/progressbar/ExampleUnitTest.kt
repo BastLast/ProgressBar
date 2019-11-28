@@ -1,4 +1,4 @@
-package com.example.progressbar
+package com.bastlast.progressbar
 
 import org.junit.Test
 
