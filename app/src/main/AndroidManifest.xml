@@ -10,20 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
         <activity
-            android:name="com.bastlast.progressbar.MainActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
+            android:name=".Level5"
+            android:screenOrientation="landscape" />
         <activity
-            android:name="com.bastlast.progressbar.Splasscreen"
+            android:name=".Level4"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Level3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Level2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Level1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Splasscreen"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

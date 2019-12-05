@@ -8,20 +8,19 @@ import kotlinx.android.synthetic.main.activity_splasscreen.*
 
 class Splasscreen : AppCompatActivity() {
 
-    private val splashTime = 1000L // 1 seconds
+    private val splashTime = 500L // 1 seconds
     private lateinit var myHandler: Handler
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splasscreen)
-
         var id = 0
         Thread(Runnable
         {
             while (id <= 100) {
-                progress_horizontal.setProgress(id);
+                progress_horizontal.setProgress(id)
                 try {
-                    Thread.sleep(10)
+                    Thread.sleep(5)
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 }

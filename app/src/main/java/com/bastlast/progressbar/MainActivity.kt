@@ -3,20 +3,19 @@ package com.bastlast.progressbar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //goToSplashActivity()
         setContentView(R.layout.activity_main)
-
     }
 
-    private fun goToSplashActivity(){
-        val splashActivityIntent = Intent(applicationContext, Splasscreen::class.java)
-        startActivity(splashActivityIntent)
+    fun gotoLevel1(view: View) {
+        val level1Intent = Intent(applicationContext, Level1::class.java)
+        startActivity(level1Intent)
         finish()
     }
 
