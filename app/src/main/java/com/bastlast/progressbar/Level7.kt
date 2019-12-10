@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_level7.*
 import kotlinx.android.synthetic.main.activity_level7.progress_horizontal
-import kotlinx.android.synthetic.main.activity_splasscreen.*
 
 class Level7 : AppCompatActivity() {
 

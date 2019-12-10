@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_splasscreen.*
+import kotlinx.android.synthetic.main.activity_level1.*
 
 class Level1 : AppCompatActivity() {
     private var id = 1
@@ -15,7 +15,7 @@ class Level1 : AppCompatActivity() {
 
     fun add(view: View) {
         id += 20
-        progress_horizontal.setProgress(id,true);
+        progress_horizontal.setProgress(id,true)
         if(id>=100){
             gotoLevel2()
         }

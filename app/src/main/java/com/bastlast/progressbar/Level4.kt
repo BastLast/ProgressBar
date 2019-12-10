@@ -3,9 +3,7 @@ package com.bastlast.progressbar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_level4.*
-import kotlinx.android.synthetic.main.activity_splasscreen.progress_horizontal
 
 class Level4 : AppCompatActivity() {
     private var id = 1
@@ -15,7 +13,7 @@ class Level4 : AppCompatActivity() {
         layout.setOnTouchListener(object : OnSwipeTouchListener() {
             override fun onSwipeRight() {
                 id += 20
-                progress_horizontal.setProgress(id, true);
+                progress_horizontal.setProgress(id, true)
                 if (id >= 100) {
                     gotoLevel5()
                 }
