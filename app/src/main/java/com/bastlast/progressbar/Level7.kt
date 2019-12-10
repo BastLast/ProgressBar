@@ -20,30 +20,20 @@ class Level7 : AppCompatActivity() {
 
     fun add1(view: View) {
         id += 16
-        coups++
-        progress_horizontal.setProgress(id, true)
-        if (id > 100 || coups > 3) {
-            reset()
-        }
-        if (id == 100) {
-            gotoLevel8()
-        }
+        savestep()
     }
 
     fun add2(view: View) {
         id += 29
-        coups++
-        progress_horizontal.setProgress(id, true)
-        if (id > 100 || coups > 3) {
-            reset()
-        }
-        if (id == 100) {
-            gotoLevel8()
-        }
+        savestep()
     }
 
     fun add3(view: View) {
         id += 42
+        savestep()
+    }
+
+    private fun savestep() {
         coups++
         progress_horizontal.setProgress(id, true)
         if (id > 100 || coups > 3) {
