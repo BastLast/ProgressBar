@@ -11,7 +11,6 @@ class Level1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_level1)
-
     }
 
     fun add(view: View) {
