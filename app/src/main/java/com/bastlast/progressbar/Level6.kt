@@ -32,8 +32,8 @@ class Level6 : AppCompatActivity(), SensorEventListener {
     override fun onSensorChanged(event: SensorEvent) {
         val light = event.values[0]
         val lightvalue = light.toInt()
-        if (echelle == 0) echelle = (lightvalue*1.2).toInt()
-        id = 100- (100 * lightvalue/echelle)
+        if (echelle == 0) echelle = (lightvalue * 1.2).toInt()
+        id = 100 - (100 * lightvalue / echelle)
         progress_horizontal.setProgress(id, true);
         if (id >= 100) {
             gotoLevel7()
