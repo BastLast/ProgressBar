@@ -34,9 +34,13 @@ class Level3 : AppCompatActivity() {
                 gotoLevel4()
             }
         } else {
-            id = 0
-            progress_horizontal.setProgress(id, true)
+            reset()
         }
+    }
+
+    private fun reset() {
+        id = 0
+        progress_horizontal.setProgress(id, true)
     }
 
     private fun gotoLevel4() {

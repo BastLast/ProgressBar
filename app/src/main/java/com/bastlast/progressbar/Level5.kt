@@ -14,8 +14,7 @@ class Level5 : AppCompatActivity() {
         Thread(Runnable
         {
             while (id <= 100) {
-                id = 0
-                progress_horizontal.setProgress(id, true)
+                reset()
                 try {
                     Thread.sleep(1000)
                 } catch (e: InterruptedException) {
@@ -23,6 +22,11 @@ class Level5 : AppCompatActivity() {
                 }
             }
         }).start()
+    }
+
+    private fun reset() {
+        id = 0
+        progress_horizontal.setProgress(id, true)
     }
 
     fun add(view: View) {
