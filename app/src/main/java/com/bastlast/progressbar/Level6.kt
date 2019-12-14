@@ -41,6 +41,7 @@ class Level6 : AppCompatActivity(), SensorEventListener {
         val light = event.values[0]
         val lightvalue = light.toInt()
         if (echelle == 0) echelle = (lightvalue * 1.2).toInt()
+        if (echelle == 0) echelle++
         id = 100 - (100 * lightvalue / echelle)
     }
 
