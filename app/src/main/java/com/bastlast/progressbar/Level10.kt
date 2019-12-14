@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_level3.*
 
-class Level9 : AppCompatActivity() {
+class Level10 : AppCompatActivity() {
     private var id = 0
     private var speed = 0
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,7 +55,7 @@ class Level9 : AppCompatActivity() {
     }
 
     private fun gotoLevel10() {
-        val level10Intent = Intent(applicationContext, Tempend::class.java)
+        val level10Intent = Intent(applicationContext, Level10::class.java)
         startActivity(level10Intent)
         finish()
     }

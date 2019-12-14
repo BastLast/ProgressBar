@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun gotoLevel1(view: View) {
-        val level1Intent = Intent(applicationContext, Level9::class.java)
+        val level1Intent = Intent(applicationContext, Level1::class.java)
         startActivity(level1Intent)
         finish()
     }

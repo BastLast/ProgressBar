@@ -19,4 +19,6 @@
     <string name="b4">4</string>
     <string name="level8">8</string>
     <string name="level9">9</string>
+    <string name="level10">10</string>
+    <string name="tempend">Merci d\'avoir essayé ma petite application ! Des nouveaux niveaux arrivent bientôt !</string>
 </resources>
