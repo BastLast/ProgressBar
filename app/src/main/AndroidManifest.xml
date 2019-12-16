@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
+        <activity android:name=".Level12"></activity>
         <activity
             android:name=".Tempend"
             android:screenOrientation="landscape" />
