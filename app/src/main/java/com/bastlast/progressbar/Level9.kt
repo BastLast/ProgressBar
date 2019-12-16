@@ -55,7 +55,7 @@ class Level9 : AppCompatActivity() {
     }
 
     private fun gotoLevel10() {
-        val level10Intent = Intent(applicationContext, Tempend::class.java)
+        val level10Intent = Intent(applicationContext, Level10::class.java)
         startActivity(level10Intent)
         finish()
     }

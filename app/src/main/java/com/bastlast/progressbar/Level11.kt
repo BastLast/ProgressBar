@@ -60,7 +60,7 @@ class Level11 : AppCompatActivity(), SensorEventListener {
     }
 
     private fun gotoLevel12() {
-        val level12Intent = Intent(applicationContext, Level12::class.java)
+        val level12Intent = Intent(applicationContext, Tempend::class.java)
         startActivity(level12Intent)
         finish()
     }

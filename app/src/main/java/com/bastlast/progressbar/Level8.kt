@@ -42,8 +42,8 @@ class Level8 : AppCompatActivity() {
     }
 
     private fun gotoLevel9() {
-        val level8Intent = Intent(applicationContext, Level9::class.java)
-        startActivity(level8Intent)
+        val level9Intent = Intent(applicationContext, Level9::class.java)
+        startActivity(level9Intent)
         finish()
     }
 
