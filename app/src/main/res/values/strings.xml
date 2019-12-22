@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProgressBar</string>
     <string name="title">Progressbar</string>
-    <string name="startbutton">Start</string>
+    <string name="startbutton">Jouer</string>
     <string name="level1">1</string>
     <string name="level2">2</string>
     <string name="add">+</string>
@@ -11,7 +11,7 @@
     <string name="level4">4</string>
     <string name="level5">5</string>
     <string name="level6">6</string>
-    <string name="reset">Reset</string>
+    <string name="reset">Réinitialiser</string>
     <string name="level7">7</string>
     <string name="b1">1</string>
     <string name="b2">2</string>
@@ -22,4 +22,9 @@
     <string name="level10">10</string>
     <string name="tempend">Merci d\'avoir essayé ma petite application ! Des nouveaux niveaux arrivent bientôt !</string>
     <string name="level11">11</string>
+    <string name="level13">13</string>
+    <string name="infobutton">tuto</string>
+    <string name="about">Remplissez la barre de progression pour parvenir au niveau suivant. Chaque barre de progression se contrôle différemment.</string>
+    <string name="Tuto">Mini-Tuto</string>
+    <string name="returnbutton">Retour</string>
 </resources>

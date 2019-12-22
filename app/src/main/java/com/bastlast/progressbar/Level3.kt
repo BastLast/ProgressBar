@@ -1,10 +1,12 @@
 package com.bastlast.progressbar
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_level3.*
+import java.io.FileOutputStream
 
 class Level3 : AppCompatActivity() {
     private var id = 0
@@ -44,6 +46,15 @@ class Level3 : AppCompatActivity() {
     }
 
     private fun gotoLevel4() {
+        val file= "save"
+        val data = "4"
+        val fileOutputStream: FileOutputStream
+        try {
+            fileOutputStream = openFileOutput(file, Context.MODE_PRIVATE)
+            fileOutputStream.write(data.toByteArray())
+        }catch (e: Exception){
+            e.printStackTrace()
+        }
         val level4Intent = Intent(applicationContext, Level4::class.java)
         startActivity(level4Intent)
         finish()

@@ -4,43 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bastlast.progressbar.MainActivity">
-
+    tools:context=".about">
 
     <TextView
-        android:id="@+id/Titre"
+        android:id="@+id/title"
+        android:textColor="@color/colorAccent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/title"
-        android:textColor="@color/colorAccent"
+        android:layout_marginTop="52dp"
+        android:text="@string/Tuto"
         android:textSize="100sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/startbutton"
+        app:layout_constraintBottom_toTopOf="@+id/explanation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/startbutton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="204dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="gotoLevel1"
-        android:text="@string/startbutton"
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="530dp"
+        android:layout_height="101dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/about"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876" />
+        app:layout_constraintVertical_bias="0.603" />
 
     <Button
         android:id="@+id/infobutton"
@@ -49,13 +44,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:onClick="goabout"
-        android:text="@string/infobutton"
+        android:onClick="returnback"
+        android:text="@string/returnbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.348"
-        app:layout_constraintStart_toEndOf="@+id/startbutton"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.876" />
+        app:layout_constraintVertical_bias="0.912" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

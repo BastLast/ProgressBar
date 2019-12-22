@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_level11.*
+import java.io.FileOutputStream
 
 class Level11 : AppCompatActivity(), SensorEventListener {
 
@@ -60,6 +61,15 @@ class Level11 : AppCompatActivity(), SensorEventListener {
     }
 
     private fun gotoLevel12() {
+        val file= "save"
+        val data = "12"
+        val fileOutputStream: FileOutputStream
+        try {
+            fileOutputStream = openFileOutput(file, Context.MODE_PRIVATE)
+            fileOutputStream.write(data.toByteArray())
+        }catch (e: Exception){
+            e.printStackTrace()
+        }
         val level12Intent = Intent(applicationContext, Tempend::class.java)
         startActivity(level12Intent)
         finish()
