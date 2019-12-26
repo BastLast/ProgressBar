@@ -25,19 +25,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun getCurrentIntent(currentlevel: Int): Intent {
         return when (currentlevel) {
-             1 -> Intent(applicationContext, Level1::class.java)
-             2 -> Intent(applicationContext, Level2::class.java)
-             3 -> Intent(applicationContext, Level3::class.java)
-             4 -> Intent(applicationContext, Level4::class.java)
-             5 -> Intent(applicationContext, Level5::class.java)
-             6 -> Intent(applicationContext, Level6::class.java)
-             7 -> Intent(applicationContext, Level7::class.java)
-             8 -> Intent(applicationContext, Level8::class.java)
-             9 -> Intent(applicationContext, Level9::class.java)
-             10 -> Intent(applicationContext, Level10::class.java)
-             11 -> Intent(applicationContext, Level11::class.java)
-             else -> Intent(applicationContext, Tempend::class.java)
-         }
+            1 -> Intent(applicationContext, Level1::class.java)
+            2 -> Intent(applicationContext, Level2::class.java)
+            3 -> Intent(applicationContext, Level3::class.java)
+            4 -> Intent(applicationContext, Level4::class.java)
+            5 -> Intent(applicationContext, Level5::class.java)
+            6 -> Intent(applicationContext, Level6::class.java)
+            7 -> Intent(applicationContext, Level7::class.java)
+            8 -> Intent(applicationContext, Level8::class.java)
+            9 -> Intent(applicationContext, Level9::class.java)
+            10 -> Intent(applicationContext, Level10::class.java)
+            11 -> Intent(applicationContext, Level11::class.java)
+            //else -> Intent(applicationContext, Level12::class.java)
+            else -> Intent(applicationContext, Tempend::class.java)
+        }
     }
 
     private fun getCurrentLevel(): Int {

@@ -5,7 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_level2.*
+import kotlinx.android.synthetic.main.activity_splasscreen.*
 import java.io.FileOutputStream
 
 class Level2 : AppCompatActivity() {

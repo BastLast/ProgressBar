@@ -27,4 +27,7 @@
     <string name="about">Remplissez la barre de progression pour parvenir au niveau suivant. Chaque barre de progression se contrôle différemment.</string>
     <string name="Tuto">Mini-Tuto</string>
     <string name="returnbutton">Retour</string>
+    <string name="restart">Recommencer du début</string>
+    <string name="warning">Recommencer une partie supprimera votre sauvegarde !</string>
+    <string name="avis">Noter l\'application</string>
 </resources>
