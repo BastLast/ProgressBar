@@ -19,7 +19,7 @@ class Level7 : AppCompatActivity() {
     }
 
     fun add1(view: View) {
-        id += 16
+        id += 58
         savestep()
     }
 
@@ -34,9 +34,8 @@ class Level7 : AppCompatActivity() {
     }
 
     private fun savestep() {
-        coups++
         progress_horizontal.setProgress(id, true)
-        if (id > 100 || coups > 3) {
+        if (id > 100) {
             reset()
         }
         if (id == 100) {
