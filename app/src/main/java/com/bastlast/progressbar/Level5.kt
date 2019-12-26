@@ -32,7 +32,7 @@ class Level5 : AppCompatActivity() {
     }
 
     fun add(view: View) {
-        id += 20
+        id += 15
         progress_horizontal.setProgress(id, true)
         if (id >= 100) {
             gotoLevel6()

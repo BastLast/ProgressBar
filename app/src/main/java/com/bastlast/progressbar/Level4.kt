@@ -14,7 +14,7 @@ class Level4 : AppCompatActivity() {
         setContentView(R.layout.activity_level4)
         layout.setOnTouchListener(object : OnSwipeTouchListener() {
             override fun onSwipeRight() {
-                id += 20
+                id += 15
                 progress_horizontal.setProgress(id, true)
                 if (id >= 100) {
                     gotoLevel5()

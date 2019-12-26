@@ -29,7 +29,7 @@ class Level3 : AppCompatActivity() {
 
     fun add(view: View) {
         if (speed == 0) {
-            id += 20
+            id += 15
             speed = 1
             progress_horizontal.setProgress(id, true)
             if (id >= 100) {
