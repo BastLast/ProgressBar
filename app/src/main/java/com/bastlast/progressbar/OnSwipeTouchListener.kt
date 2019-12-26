@@ -3,6 +3,7 @@ package com.bastlast.progressbar
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
+import kotlin.math.abs
 
 open class OnSwipeTouchListener : View.OnTouchListener {
 
@@ -32,16 +33,14 @@ open class OnSwipeTouchListener : View.OnTouchListener {
             try {
                 val diffY = e2.y - e1.y
                 val diffX = e2.x - e1.x
-                if (Math.abs(diffX) > Math.abs(diffY)) {
-                    if (Math.abs(diffX) > SWIPETHRESHOLD && Math.abs(velocityX) > SWIPEVELOCITYTHRESHOLD) {
+                if (abs(diffX) > abs(diffY)) {
+                    if (abs(diffX) > SWIPETHRESHOLD && abs(velocityX) > SWIPEVELOCITYTHRESHOLD) {
                         if (diffX > 0) {
                             onSwipeRight()
                         } else {
                             onSwipeLeft()
                         }
                     }
-                } else {
-                    // onTouch(e);
                 }
             } catch (exception: Exception) {
                 exception.printStackTrace()
@@ -60,7 +59,4 @@ open class OnSwipeTouchListener : View.OnTouchListener {
 
     open fun onSwipeLeft() {}
 
-    open fun onSwipeTop() {}
-
-    open fun onSwipeBottom() {}
 }

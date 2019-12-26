@@ -49,13 +49,13 @@ class Level2 : AppCompatActivity() {
     }
 
     private fun gotoLevel3() {
-        val file= "save"
+        val file = "save"
         val data = "3"
         val fileOutputStream: FileOutputStream
         try {
             fileOutputStream = openFileOutput(file, Context.MODE_PRIVATE)
             fileOutputStream.write(data.toByteArray())
-        }catch (e: Exception){
+        } catch (e: Exception) {
             e.printStackTrace()
         }
         val level3Intent = Intent(applicationContext, Level3::class.java)

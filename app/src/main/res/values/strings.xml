@@ -30,4 +30,5 @@
     <string name="restart">Recommencer du début</string>
     <string name="warning">Recommencer une partie supprimera votre sauvegarde !</string>
     <string name="avis">Noter l\'application</string>
+    <string name="level12">12</string>
 </resources>
