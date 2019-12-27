@@ -70,7 +70,7 @@ class Level11 : AppCompatActivity(), SensorEventListener {
         }catch (e: Exception){
             e.printStackTrace()
         }
-        val level12Intent = Intent(applicationContext, Tempend::class.java)
+        val level12Intent = Intent(applicationContext, Level12::class.java)
         startActivity(level12Intent)
         finish()
     }
