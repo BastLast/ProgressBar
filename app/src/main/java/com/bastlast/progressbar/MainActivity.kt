@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             11 -> Intent(applicationContext, Level11::class.java)
             12 -> Intent(applicationContext, Level12::class.java)
             13 -> Intent(applicationContext, Level13::class.java)
-            //else -> Intent(applicationContext, Level13::class.java)
-            else -> Intent(applicationContext, Tempend::class.java)
+            else -> Intent(applicationContext, Level13::class.java)
+            //else -> Intent(applicationContext, Tempend::class.java)
         }
     }
 
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goabout(view: View) {
-        val aboutIntent = Intent(applicationContext, about::class.java)
+        val aboutIntent = Intent(applicationContext, About::class.java)
         startActivity(aboutIntent)
         finish()
     }

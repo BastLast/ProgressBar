@@ -18,7 +18,7 @@ class Level5 : AppCompatActivity() {
             while (id <= 100) {
                 reset()
                 try {
-                    Thread.sleep(1000)
+                    Thread.sleep(1500)
                 } catch (e: InterruptedException) {
                     e.printStackTrace()
                 }

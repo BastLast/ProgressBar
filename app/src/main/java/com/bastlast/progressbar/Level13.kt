@@ -13,7 +13,7 @@ import java.io.FileOutputStream
 
 class Level13 : AppCompatActivity() {
     private var id = 1
-
+    private var success = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_level13)
@@ -21,34 +21,59 @@ class Level13 : AppCompatActivity() {
     }
 
     fun bpressed(view: View) {
-        id = 17
-        progress_horizontal.setProgress(id, true)
+        progressvisualy()
+        if (id == 17) {
+            success = true
+        }
+        testReset(view)
+    }
+
+    fun otherpressed(view: View){
+        progressvisualy()
+        testReset(view)
+    }
+
+    private fun testReset(view: View) {
+        if (id >= 100) {
+            reset(view)
+        }
     }
 
     fun apressed(view: View) {
         if (id == 17 || id == 51) {
-            id += 17
-            progress_horizontal.setProgress(id, true)
-        } else {
-            reset(view)
+            progressvisualy()
+        }else{
+            progressvisualy()
+            success = false
+            testReset(view)
         }
+
     }
 
     fun npressed(view: View) {
         if (id == 34 || id == 68) {
-            id += 17
-            progress_horizontal.setProgress(id, true)
-        } else {
-            reset(view)
+            progressvisualy()
+        }else{
+            progressvisualy()
+            success = false
+            testReset(view)
         }
+
+    }
+
+    private fun progressvisualy() {
+        id += 17
+        progress_horizontal.setProgress(id, true)
     }
 
     fun epressed(view: View) {
-        if (id == 85) {
+        if (id == 85 && success) {
             gotoLevel14()
-        } else {
-            reset(view)
+        }else{
+            progressvisualy()
+            testReset(view)
         }
+
     }
 
 

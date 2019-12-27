@@ -13,7 +13,7 @@
         android:theme="@style/NoActionBar"
         android:fullBackupContent="true">
         <activity
-            android:name=".about"
+            android:name=".About"
             android:screenOrientation="landscape" />
         <activity
             android:name=".Level14"
