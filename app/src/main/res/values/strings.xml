@@ -31,4 +31,11 @@
     <string name="warning">Recommencer une partie supprimera votre sauvegarde !</string>
     <string name="avis">Noter l\'application</string>
     <string name="level12">12</string>
+    <string name="letter1">A</string>
+    <string name="letter2">B</string>
+    <string name="letter3">E</string>
+    <string name="letter4">F</string>
+    <string name="letter5">M</string>
+    <string name="letter6">N</string>
+    <string name="a_qr_code">a qr code</string>
 </resources>
