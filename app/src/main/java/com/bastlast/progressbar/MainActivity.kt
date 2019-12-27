@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
             11 -> Intent(applicationContext, Level11::class.java)
             12 -> Intent(applicationContext, Level12::class.java)
             13 -> Intent(applicationContext, Level13::class.java)
-            else -> Intent(applicationContext, Level13::class.java)
-            //else -> Intent(applicationContext, Tempend::class.java)
+            //else -> Intent(applicationContext, Level13::class.java)
+            else -> Intent(applicationContext, Tempend::class.java)
         }
     }
 
