@@ -87,7 +87,7 @@ class Level13 : AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        val level14Intent = Intent(applicationContext, Tempend::class.java)
+        val level14Intent = Intent(applicationContext, Level14::class.java)
         startActivity(level14Intent)
         finish()
     }
