@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goabout(view: View) {
-        val aboutIntent = Intent(applicationContext, About::class.java)
+        val aboutIntent = Intent(applicationContext, Level9::class.java)
         startActivity(aboutIntent)
         finish()
     }

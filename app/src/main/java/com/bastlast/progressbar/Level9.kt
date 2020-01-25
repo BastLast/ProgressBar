@@ -14,41 +14,26 @@ class Level9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_level9)
+        Thread(Runnable
+        {
+            while (id <= 100) {
+                reset()
+                try {
+                    Thread.sleep(2000)
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                }
+            }
+        }).start()
     }
 
+
     fun add(view: View) {
-        if (speed == 0) {
-            id += 15
-            speed = 1
-            progress_horizontal.setProgress(id, true)
-            if (id >= 100) {
-                gotoLevel10()
-            }
-        } else {
-            reset()
+        id += 9
+        progress_horizontal.setProgress(id, true)
+        if (id >= 100) {
+            gotoLevel10()
         }
-        Thread(Runnable
-        {
-            try {
-                Thread.sleep(1000)
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
-            }
-            speed = 0
-        }).start()
-        Thread(Runnable
-        {
-            val memory = id
-            try {
-                Thread.sleep(2000)
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
-            }
-            if (memory == id) {
-                id=0
-            }
-            progress_horizontal.setProgress(id, true)
-        }).start()
     }
 
     private fun reset() {
