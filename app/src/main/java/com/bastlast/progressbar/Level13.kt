@@ -1,5 +1,6 @@
 package com.bastlast.progressbar
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,38 +13,35 @@ import kotlinx.android.synthetic.main.activity_level13.progress_horizontal
 import java.io.FileOutputStream
 
 class Level13 : AppCompatActivity() {
-    private var id = 1
+    private var id = 0
     private var success = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_level13)
-
     }
 
     fun bpressed(view: View) {
         progressvisualy()
-        if (id == 17) {
-            success = true
-        }
+        success = id == 17
         testReset(view)
     }
 
-    fun otherpressed(view: View){
+    fun otherpressed(view: View) {
         progressvisualy()
+        success = false
         testReset(view)
     }
 
     private fun testReset(view: View) {
         if (id >= 100) {
+            success = true
             reset(view)
         }
     }
 
     fun apressed(view: View) {
-        if (id == 17 || id == 51) {
-            progressvisualy()
-        }else{
-            progressvisualy()
+        progressvisualy()
+        if (!(id == 34 || id == 68)) {
             success = false
             testReset(view)
         }
@@ -51,10 +49,8 @@ class Level13 : AppCompatActivity() {
     }
 
     fun npressed(view: View) {
-        if (id == 34 || id == 68) {
-            progressvisualy()
-        }else{
-            progressvisualy()
+        progressvisualy()
+        if (!(id == 51 || id == 85)) {
             success = false
             testReset(view)
         }
@@ -69,11 +65,10 @@ class Level13 : AppCompatActivity() {
     fun epressed(view: View) {
         if (id == 85 && success) {
             gotoLevel14()
-        }else{
+        } else {
             progressvisualy()
             testReset(view)
         }
-
     }
 
 
