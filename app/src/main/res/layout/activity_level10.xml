@@ -31,4 +31,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="539dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="37dp"
+        android:contentDescription="@string/a_qr_code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_horizontal"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/slide" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
