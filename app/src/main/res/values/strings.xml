@@ -2,27 +2,27 @@
     <string name="app_name">ProgressBar</string>
     <string name="title">Progressbar</string>
     <string name="startbutton">Jouer</string>
-    <string name="level1">1</string>
-    <string name="level2">2</string>
-    <string name="add">+</string>
-    <string name="halfadd">-</string>
-    <string name="verticalhalfadd">|</string>
-    <string name="level3">3</string>
-    <string name="level4">4</string>
-    <string name="level5">5</string>
-    <string name="level6">6</string>
+    <string name="level1" translatable="false">1</string>
+    <string name="level2" translatable="false">2</string>
+    <string name="add" translatable="false">+</string>
+    <string name="halfadd" translatable="false">-</string>
+    <string name="verticalhalfadd" translatable="false">|</string>
+    <string name="level3" translatable="false">3</string>
+    <string name="level4" translatable="false">4</string>
+    <string name="level5" translatable="false">5</string>
+    <string name="level6" translatable="false">6</string>
     <string name="reset">Réinitialiser</string>
-    <string name="level7">7</string>
-    <string name="b1">58</string>
-    <string name="b2">29</string>
-    <string name="b3">42</string>
-    <string name="b4">4</string>
-    <string name="level8">8</string>
-    <string name="level9">9</string>
-    <string name="level10">10</string>
+    <string name="level7" translatable="false">7</string>
+    <string name="b1" translatable="false">58</string>
+    <string name="b2" translatable="false">29</string>
+    <string name="b3" translatable="false">42</string>
+    <string name="b4" translatable="false">4</string>
+    <string name="level8" translatable="false">8</string>
+    <string name="level9" translatable="false">9</string>
+    <string name="level10" translatable="false">10</string>
     <string name="tempend">Merci d\'avoir essayé ma petite application ! Des nouveaux niveaux arrivent bientôt !</string>
-    <string name="level11">11</string>
-    <string name="level13">13</string>
+    <string name="level11" translatable="false">11</string>
+    <string name="level13" translatable="false">13</string>
     <string name="infobutton">tuto</string>
     <string name="about">Remplissez la barre de progression pour parvenir au niveau suivant. Chaque barre de progression se contrôle différemment.</string>
     <string name="Tuto">Mini-Tuto</string>
@@ -30,13 +30,13 @@
     <string name="restart">Recommencer du début</string>
     <string name="warning">Recommencer une partie supprimera votre sauvegarde !</string>
     <string name="avis">Noter l\'application</string>
-    <string name="level12">12</string>
-    <string name="letter1">A</string>
-    <string name="letter2">B</string>
-    <string name="letter3">E</string>
-    <string name="letter4">F</string>
-    <string name="letter5">M</string>
-    <string name="letter6">N</string>
+    <string name="level12" translatable="false">12</string>
+    <string name="letter1" translatable="false">A</string>
+    <string name="letter2" translatable="false">B</string>
+    <string name="letter3" translatable="false">E</string>
+    <string name="letter4" translatable="false">F</string>
+    <string name="letter5" translatable="false">M</string>
+    <string name="letter6" translatable="false">N</string>
     <string name="a_qr_code">a qr code</string>
-    <string name="level14">14</string>
+    <string name="level14" translatable="false">14</string>
 </resources>

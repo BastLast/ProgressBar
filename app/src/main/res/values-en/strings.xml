@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProgressBar</string>
+    <string name="Tuto">Information</string>
+    <string name="a_qr_code">a qr code</string>
+    <string name="about">Fill the progressbar to get to the next level. Each progressbar is controlled differently.</string>
+    <string name="avis">Rate the app</string>
+    <string name="infobutton">info</string>
+    <string name="reset">Reset</string>
+    <string name="restart">Restart</string>
+    <string name="returnbutton">Back</string>
+    <string name="startbutton">Play</string>
+    <string name="tempend">Thank you for playing ! New levels are comming soon !</string>
+    <string name="title">Progressbar</string>
+    <string name="warning">Starting a new game will delete your progression</string>
+</resources>
