@@ -39,4 +39,7 @@
     <string name="letter6" translatable="false">N</string>
     <string name="a_qr_code">a qr code</string>
     <string name="level14" translatable="false">14</string>
+    <string name="level15">15</string>
+    <string name="halfhalfadd">--</string>
+    <string name="level16">16</string>
 </resources>

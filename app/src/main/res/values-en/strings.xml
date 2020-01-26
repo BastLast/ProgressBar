@@ -13,4 +13,7 @@
     <string name="tempend">Thank you for playing ! New levels are comming soon !</string>
     <string name="title">Progressbar</string>
     <string name="warning">Starting a new game will delete your progression</string>
+    <string name="level15">15</string>
+    <string name="halfhalfadd">--</string>
+    <string name="level16">16</string>
 </resources>

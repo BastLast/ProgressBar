@@ -2,31 +2,27 @@ package com.bastlast.progressbar
 
 import android.content.Context
 import android.content.Intent
-import android.content.IntentFilter
-import android.os.BatteryManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_level14.*
+import kotlinx.android.synthetic.main.activity_level14.progress_horizontal
+import kotlinx.android.synthetic.main.activity_level16.*
 import java.io.FileOutputStream
 
-class Level14 : AppCompatActivity() {
-
+class Level16 : AppCompatActivity() {
     private var id = 0
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_level14)
+        setContentView(R.layout.activity_level16)
         Thread(Runnable
         {
             while (id < 100) {
-                if (Power.isConnected(applicationContext)) {
-                    id = 50
-                } else {
-                    if (id == 50) {
-                        gotoLevel15()
-                    }
-                }
+                id = android.provider.Settings.System.getInt(
+                    applicationContext.getContentResolver(),
+                    android.provider.Settings.System.SCREEN_BRIGHTNESS)
+                id /= 2;
                 progress_horizontal.setProgress(id, true)
                 try {
                     Thread.sleep(10)
@@ -34,12 +30,13 @@ class Level14 : AppCompatActivity() {
                     e.printStackTrace()
                 }
             }
+            gotoLevel17()
         }).start()
     }
 
-    private fun gotoLevel15() {
+    private fun gotoLevel17() {
         val file = "save"
-        val data = "15"
+        val data = "17"
         val fileOutputStream: FileOutputStream
         try {
             fileOutputStream = openFileOutput(file, Context.MODE_PRIVATE)
@@ -47,18 +44,8 @@ class Level14 : AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-        val level15Intent = Intent(applicationContext, Level15::class.java)
-        startActivity(level15Intent)
+        val level17Intent = Intent(applicationContext, Tempend::class.java)
+        startActivity(level17Intent)
         finish()
     }
-
-    object Power {
-        fun isConnected(context: Context): Boolean {
-            val intent = context.registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
-            val plugged = intent?.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1)
-            return plugged == BatteryManager.BATTERY_PLUGGED_AC || plugged == BatteryManager.BATTERY_PLUGGED_USB || plugged == BatteryManager.BATTERY_PLUGGED_WIRELESS
-        }
-    }
-
 }
-

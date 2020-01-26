@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
         <activity
+        android:name=".Level16"
+        android:screenOrientation="landscape" />
+        <activity
             android:name=".About"
             android:screenOrientation="landscape" />
         <activity
