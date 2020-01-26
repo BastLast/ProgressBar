@@ -24,6 +24,7 @@ class Level14 : AppCompatActivity() {
                     id = 50
                 } else {
                     if (id == 50) {
+                        id = 100
                         gotoLevel15()
                     }
                 }
